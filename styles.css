@@ -1,0 +1,148 @@
+/* General Styles */
+a {
+  text-transform: uppercase;
+  font-size: .8rem;
+}
+body {
+  padding: 0 10%;
+}
+
+.sub-heading {
+  margin-bottom: 20px;
+}
+
+.illustration {
+  padding: 48px 0;
+}
+
+.illustration-paragraph {
+  padding: 0 0 16px;
+}
+
+.feature-illustration .illustration, .hero {
+  padding-left: 80px;
+}
+
+/* Navigation Styles */
+.navbar {
+  padding: 0;
+  margin: 16px 0;
+}
+
+.nav-link {
+  margin-left: 32px;
+}
+
+/* Header Styles */
+.header {
+  display: flex;
+  flex-flow: row-reverse;
+  margin: 64px 0;
+}
+
+.header-paragraph {
+  padding: 16px 32px 16px 0;
+}
+
+/* Features Styles */
+.intro {
+  text-align: center;
+  margin: 0 30%;
+}
+
+.feature-illustration-button {
+  border-bottom: 1px solid black;
+  opacity: 0.5;
+  margin: 15% 0;
+}
+
+.feature-illustration {
+  margin-bottom: 15%;
+}
+
+/* Extension Styles */
+.my-card {
+  text-align: center;
+  margin: 5% 20%;
+}
+
+.my-card2 {
+  margin-top: 32px;
+}
+
+.my-card3 {
+  margin-top: 64px;
+}
+
+.dots {
+  width: 100%;
+}
+
+/* FAQ Styles */
+.faq {
+  text-align: center;
+  padding-bottom: 80px;
+}
+
+.faq-content {
+  margin: 5% 25%;
+  text-align: left;
+}
+
+.faq-question {
+  display: inline;
+}
+
+.faq-q {
+  position: relative;
+}
+
+.faq-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/* CTO Styles */
+.cto {
+  text-align: center;
+  padding: 5% 30%;
+}
+
+/* Contact Us Styles */
+.contact-us {
+  padding: 20px 0;
+  position: relative;
+}
+
+.contact-link {
+  padding-left: 32px;
+}
+
+.icons {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.footer-img {
+  padding-left: 16px;
+}
+
+@media screen and (max-width: 750px) {
+  body{
+    text-align: center;
+  }
+  .header {
+    display: block;
+  }
+
+}
+
+
+
+.attribution { font-size: 11px;
+  text-align: center; }
+.attribution a {
+  text-transform: lowercase;
+  color: hsl(228, 45%, 44%); }
