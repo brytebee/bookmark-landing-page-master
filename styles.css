@@ -1,14 +1,30 @@
 /* General Styles */
 a {
   text-transform: uppercase;
+  font-size: .7rem;
+}
+
+body {
+  padding: .3% 0;
+  font-family: 'Rubik', sans-serif;
   font-size: .8rem;
 }
-body {
-  padding: 0 10%;
+
+p {
+  color: #9194a1;
+}
+
+.btn-sm {
+  font-size: .6rem;
+  padding: 8px 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #9194a1;
 }
 
 .sub-heading {
   margin-bottom: 20px;
+  font-weight: 600;
 }
 
 .illustration {
@@ -19,41 +35,137 @@ body {
   padding: 0 0 16px;
 }
 
-.feature-illustration .illustration, .hero {
+.feature-illustration .illustration{
   padding-left: 80px;
+}
+
+.shape {
+  height: 300px;
+  width: 400px;
+  background-color: #5368df;
+  border-radius: 28%;
+}
+
+/* The General Blue Buttons */
+.blue-btn {
+  margin-right: 12px;
+  border-radius: 4px;
+  background-color: #5368df;
+  color: #fff;
+  box-shadow: 5px 6px 8px;
+}
+
+.blue-btn:hover {
+  border: 2px solid #5368df;
+  color: #5368df;
+  background-color: #fff;
 }
 
 /* Navigation Styles */
 .navbar {
-  padding: 0;
+  padding: 0 10%;
   margin: 16px 0;
 }
 
-.nav-link {
-  margin-left: 32px;
+.nav-item {
+  padding-left: 20px;
 }
+
+.nav-link {
+  color: #252b46;
+  width: 84px;
+}
+
+.nav-link:hover {
+  color: #fa5757;
+}
+
+/* The General Red Buttons */
+.red-btn {
+  background-color: #fa5757;
+  text-align: center;
+  border-radius: 4px;
+  color: #fff;
+  border: 2px solid #fa5757;
+}
+
+.red-btn:hover {
+  background-color:#fff;
+  color: #fa5757;
+}
+
 
 /* Header Styles */
 .header {
+  padding: 0 5% 0 10%;
   display: flex;
   flex-flow: row-reverse;
   margin: 64px 0;
 }
 
 .header-paragraph {
-  padding: 16px 32px 16px 0;
+  padding: 0 32px 16px 0;
+}
+
+.header-text {
+  padding: 48px 150px 0 0;
+}
+
+.hero {
+  padding-left: 80px;
+  position: relative;
+  box-shadow: 90px 25px 0 80px #5368df;
+  border-radius: 29px;
+}
+
+.header-btn2 {
+  margin-right: 12px;
+  box-shadow: 5px 6px 8px;
+}
+
+.header-btn2:hover {
+  border: 2px solid #252b46;
+  color: #252b46;
+  background-color: #fff;
 }
 
 /* Features Styles */
+.features {
+  padding: 0 11%;
+}
+
 .intro {
   text-align: center;
   margin: 0 30%;
 }
 
 .feature-illustration-button {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #252b46;
+  padding-bottom: 8px;
   opacity: 0.5;
   margin: 15% 0;
+}
+
+.feat-btn {
+  color: #252b46;
+  padding: 0 20px;
+  text-transform: capitalize;
+}
+
+.feat-btn:hover {
+  color: #fa5757;
+  text-decoration: none;
+}
+
+.feat-btn1 {
+  font-weight: bold;
+  border-bottom: 4px solid 	#f82020;
+  padding-bottom: 8px;
+  border-bottom-style: solid;
+}
+
+#feat2, #feat3 {
+  display: none;
 }
 
 .feature-illustration {
@@ -93,8 +205,20 @@ body {
   display: inline;
 }
 
+.faq-question-bold {
+  font-weight: 900;
+}
+
+.answer1, .answer2, .answer3, .answer4 {
+  display: none;
+}
+
 .faq-q {
   position: relative;
+}
+
+.faq-q:hover {
+  color: #fa5757;
 }
 
 .faq-img {
@@ -106,27 +230,58 @@ body {
 /* CTO Styles */
 .cto {
   text-align: center;
-  padding: 5% 30%;
+  padding: 5% 32%;
+  background-color: #5368df;
+}
+
+.cto-intro, .cto-msg {
+  color: #fff;
+  letter-spacing: 3px;
+}
+
+.cto-form {
+  display: flex;
+  flex-grow: 1;
+}
+
+.cto-form-input {
+  flex: 2.5;
+  border-radius: 7px;
+  border: 2px solid #fff;
+}
+
+.cto-btn {
+  flex: 1.1;
+  margin-left: 16px;
+  border-radius: 7px;
 }
 
 /* Contact Us Styles */
 .contact-us {
-  padding: 20px 0;
+  padding: 20px 10%;
   position: relative;
+  background-color: #252b46;
 }
 
 .contact-link {
   padding-left: 32px;
+  color: #fff;
+}
+
+.contact-link:hover, .footer-img:hover {
+  color: #fa5757;
+  text-decoration: none;
 }
 
 .icons {
   position: absolute;
-  right: 0;
-  top: 0;
+  right: 10%;
+  top: 20px;
 }
 
 .footer-img {
   padding-left: 16px;
+  color: white;
 }
 
 @media screen and (max-width: 750px) {
@@ -139,10 +294,14 @@ body {
 
 }
 
+/* The Attributions */
+.attribution {
+  padding-top: 16px;
+  font-size: 11px;
+  text-align: center;
+}
 
-
-.attribution { font-size: 11px;
-  text-align: center; }
 .attribution a {
   text-transform: lowercase;
-  color: hsl(228, 45%, 44%); }
+  color: #3e52a3;
+}

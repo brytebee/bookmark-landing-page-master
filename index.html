@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
@@ -7,7 +8,11 @@
   <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/e70807fc14.js" crossorigin="anonymous"></script>
 
+  <!-- Favicon -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
 
   <title>Frontend Mentor | Bookmark landing page</title>
 
@@ -17,6 +22,7 @@
   <!-- Local Styles -->
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
   <nav class="navbar navbar-expand-lg">
@@ -28,76 +34,79 @@
 
     <div class="collapse navbar-collapse" id="nav-content">
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item"><a class="nav-link" href="#">Features</a> </li>
-        <li class="nav-item"><a class="nav-link" href="#">Pricing</a> </li>
-        <li class="nav-item"><a class="nav-link" href="#">Contact</a> </li>
-        <li class="nav-item"><a class="nav-link" href="#">Login</a> </li>
+        <li class="nav-item"><a class="nav-link" href="#feature">Features</a> </li>
+        <li class="nav-item"><a class="nav-link" href="#faqs">Pricing</a> </li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a> </li>
+        <li class="nav-item"><a class="nav-link red-btn" href="#">Login</a> </li>
       </ul>
     </div>
   </nav>
 
   <header class="header row">
-    <img class="hero col-md-6" src="images/illustration-hero.svg" alt="">
-    <div class="illustration col-md-6">
-      <h1>A Simple Bookmark Manager</h1>
+    <img class="hero col-md-6" src="images/illustration-hero.svg" alt="hero">
+    <!-- <div class="shape  ">
+
+    </div> -->
+    <div class="illustration header-text col-md-6">
+      <h1 class="sub-heading">A Simple Bookmark Manager</h1>
 
       <p class="header-paragraph">A clean and simple interface to organize your favourite websites. Open a new
-      browser tab and see your sites load instantly. Try it for free.</p>
+        browser tab and see your sites load instantly. Try it for free.</p>
 
-      <button type="button" name="button">Get it on Chrome</button>
-      <button type="button" name="button">Get it on Firefox</button>
+      <button class="btn blue-btn btn-sm" type="button" name="button">Get it on Chrome</button>
+      <button class="btn header-btn2 btn-sm" type="button" name="button">Get it on Firefox</button>
     </div>
   </header>
 
-  <section class="Features">
+  <section id="feature" class="features">
     <div class="intro">
       <h4 class="sub-heading">Features</h4>
 
       <p>Our aim is to make it quick and easy for you to access your favourite websites.
-      Your bookmarks sync between your devices so you can access them on the go.</p>
+        Your bookmarks sync between your devices so you can access them on the go.</p>
 
       <div class="feature-illustration-button">
-        <a href="#">Simple Bookmarking</a>
-        <a href="#">Speedy Searching</a>
-        <a href="#">Easy Sharing</a>
+        <a class="feat-btn feat-btn1" href="#feat1">Simple Bookmarking</a>
+        <a class="feat-btn feat-btn2" href="#feat2">Speedy Searching</a>
+        <a class="feat-btn feat-btn3" href="#feat3">Easy Sharing</a>
       </div>
     </div>
 
-    <div class="feature-illustration row">
+    <div id="feat1" class="feature-illustration row">
       <img class="col-md-6" src="images/illustration-features-tab-1.svg" alt="">
 
       <div class="illustration col-md-6">
         <h4 class="sub-heading">Bookmark in one click</h4>
         <p class="illustration-paragraph">Organize your bookmarks however you like. Our simple drag-and-drop interface
-        gives you complete control over how you manage your favourite sites.</p>
+          gives you complete control over how you manage your favourite sites.</p>
 
-        <button type="button" name="button">More Info</button>
+        <button class="btn btn-sm blue-btn" type="button" name="button">More Info</button>
       </div>
     </div>
 
-    <div class="feature-illustration row">
+    <div id="feat2" class="feature-illustration row">
       <img class="col-md-6" src="images/illustration-features-tab-2.svg" alt="">
 
       <div class="illustration col-md-6">
         <h4 class="sub-heading">Intelligent search</h4>
 
         <p class="illustration-paragraph">Our powerful search feature will help you find saved sites in no time at all.
-        No need to trawl through all of your bookmarks.</p>
+          No need to trawl through all of your bookmarks.</p>
 
-        <button type="button" name="button">More Info</button>
+        <button class="btn btn-sm blue-btn" type="button" name="button">More Info</button>
       </div>
     </div>
 
-    <div class="feature-illustration row">
+    <div id="feat3" class="feature-illustration row">
       <img class="col-md-6" src="images/illustration-features-tab-3.svg" alt="">
 
       <div class="illustration col-md-6">
         <h4 class="sub-heading">Share your bookmarks</h4>
 
         <p class="illustration-paragraph">Easily share your bookmarks and collections with others. Create a shareable
-        link that you can send at the click of a button.</p>
+          link that you can send at the click of a button.</p>
 
-        <button type="button" name="button">More Info</button>
+        <button class="btn btn-sm blue-btn" type="button" name="button">More Info</button>
       </div>
     </div>
   </section>
@@ -107,7 +116,7 @@
       <h4 class="sub-heading">Download the extension</h4>
 
       <p>We’ve got more browsers in the pipeline. Please do let us know if you’ve
-      got a favourite you’d like us to prioritize.</p>
+        got a favourite you’d like us to prioritize.</p>
     </div>
 
     <div class="row my-card">
@@ -118,7 +127,7 @@
             <h6>Add to Chrome</h6>
             <p>Minimum version 62</p>
             <img class="dots" src="images/bg-dots.svg" alt="dot-hr">
-            <button type="button" name="button">Add & Install Extension</button>
+            <button class="btn btn-sm blue-btn" type="button" name="button">Add & Install Extension</button>
           </div>
         </div>
       </div>
@@ -129,7 +138,7 @@
             <h6>Add to Firefox</h6>
             <p>Minimum version 55</p>
             <img class="dots" src="images/bg-dots.svg" alt="dot-hr">
-            <button type="button" name="button">Add & Install Extension</button>
+            <button class="btn btn-sm blue-btn" type="button" name="button">Add & Install Extension</button>
           </div>
         </div>
       </div>
@@ -140,85 +149,90 @@
             <h6>Add to Opera</h6>
             <p>Minimum version 46</p>
             <img class="dots" src="images/bg-dots.svg" alt="dot-hr">
-            <button type="button" name="button">Add & Install Extension</button>
+            <button class="btn btn-sm blue-btn" type="button" name="button">Add & Install Extension</button>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="faq">
+  <section id="faqs" class="faq">
     <div class="intro">
       <h4 class="sub-heading">Frequently Asked Questions</h4>
 
       <p>Here are some of our FAQs. If you have any other questions you’d like
-      answered please feel free to email us.</p>
+        answered please feel free to email us.</p>
     </div>
 
     <div class="faq-content">
+      <hr>
       <!-- Question 1 -->
-      <div class="faq-q">
-        <h6 class="faq-question">What is Bookmark?</h6><img class="faq-img" src="images/icon-arrow.svg" alt="">
+      <div class="faq-q faq-drop1">
+        <h6 class="faq-question question1">What is Bookmark?</h6>
+        <img class="faq-img img1" src="images/icon-arrow.svg" alt="">
       </div>
       <hr>
       <!-- Answer 1 -->
-      <p>How can I request a new browser?</p>
+      <p class="answer1">How can I request a new browser?</p>
 
       <!-- Question 2 -->
-      <div class="faq-q">
-        <h6 class="faq-question">How can I request a new browser?</h6><img class="faq-img" src="images/icon-arrow.svg" alt="">
+      <div class="faq-q faq-drop2">
+        <h6 class="faq-question question2">How can I request a new browser?</h6>
+        <img class="faq-img img2" src="images/icon-arrow.svg" alt="">
       </div>
       <hr>
       <!-- Answer 2 -->
-      <p>Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula.
-      Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
-      ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies.
-      Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.</p>
+      <p class="answer2">Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula.
+        Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
+        ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies.
+        Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.</p>
 
       <!-- Question 3 -->
-      <div class="faq-q">
-        <h6 class="faq-question">Is there a mobile app?</h6><img class="faq-img" src="images/icon-arrow.svg" alt="">
+      <div class="faq-q faq-drop3">
+        <h6 class="faq-question question3">Is there a mobile app?</h6>
+        <img class="faq-img img3" src="images/icon-arrow.svg" alt="">
       </div>
       <hr>
       <!-- Answer 3 -->
-      <p>Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum
-      urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed
-      sollicitudin ex et ultricies bibendum.</p>
+      <p class="answer3">Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum
+        urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed
+        sollicitudin ex et ultricies bibendum.</p>
 
       <!-- Question 4 -->
-      <div class="faq-q">
-        <h6 class="faq-question">What about other Chromium browsers?</h6><img class="faq-img" src="images/icon-arrow.svg" alt="">
+      <div class="faq-q faq-drop4">
+        <h6 class="faq-question question4">What about other Chromium browsers?</h6>
+        <img class="faq-img img4" src="images/icon-arrow.svg" alt="">
       </div>
       <hr>
       <!-- Answer 4 -->
-      <p>Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam
-      vitae neque eget nisl gravida pellentesque non ut velit.</p>
+      <p class="answer4">Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam
+        vitae neque eget nisl gravida pellentesque non ut velit.</p>
     </div>
 
-    <button type="button" name="button">More Info</button>
+    <button class="btn btn-sm blue-btn" type="button" name="button">More Info</button>
 
   </section>
 
   <section class="cto">
-    <p>35,000+ already joined</p>
-    <h3 class="sub-heading">Stay up-to-date with what we’re doing</h3>
+    <p class="cto-intro">35,000+ already joined</p>
+    <h3 class="sub-heading cto-msg">Stay up-to-date with what we’re doing</h3>
 
-    <form action="" method="post">
-      <input type="email" name="" placeholder="Enter your email address.">
+    <form class="cto-form" action="" method="post">
+      <input class="cto-form-input" type="email" name="" placeholder="Enter your email address.">
 
-      <button type="submit" name="submit">Contact Us</button>
+      <button class="btn btn-sm red-btn cto-btn" type="submit" name="submit">Contact Us</button>
     </form>
   </section>
 
-  <div class="contact-us">
-    <img src="images/logo-bookmark.svg" alt="site-logo">
-    <a class="contact-link" href="#">Features</a>
-    <a class="contact-link" href="#">Pricing</a>
-    <a class="contact-link" href="#">Contact</a>
+  <div id="contact" class="contact-us">
+    <img fill src="images/logo-bookmark-footer.svg" alt="site-logo">
+    <a class="contact-link" href="#feature">Features</a>
+    <a class="contact-link" href="#faqs">Pricing</a>
+    <a class="contact-link" href="#contact">Contact</a>
 
     <div class="icons">
-      <a href="#"><i class="fab fa-facebook-square fa-2x footer-img"></i></a>
-      <a href="#"><i class="fab fa-twitter fa-2x footer-img"></i></a>
+      <a><i class="fab fa-facebook-square fa-2x footer-img"></i></a>
+      <a><i class="fab fa-twitter fa-2x footer-img"></i></a>
     </div>
   </div>
 
@@ -233,5 +247,10 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="index.js" charset="utf-8"></script>
 </body>
+
 </html>
