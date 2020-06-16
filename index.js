@@ -1,3 +1,32 @@
+// Features Slide behaviour
+$(".feat-btn1").click(function() {
+  $(".feat-btn2").removeClass("feat-btn-active");
+  $(".feat-btn3").removeClass("feat-btn-active");
+  $(".feat-btn1").addClass("feat-btn-active");
+  $("#feat1").show();
+  $("#feat2").hide();
+  $("#feat3").hide();
+});
+
+$(".feat-btn2").click(function() {
+  $("#feat1").hide();
+  $("#feat3").hide();
+  $(".feat-btn1").removeClass("feat-btn-active");
+  $(".feat-btn3").removeClass("feat-btn-active");
+  $(".feat-btn2").addClass("feat-btn-active");
+  $("#feat2").show();
+});
+
+$(".feat-btn3").click(function() {
+  $("#feat1").hide();
+  $("#feat2").hide();
+  $(".feat-btn1").removeClass("feat-btn-active");
+  $(".feat-btn2").removeClass("feat-btn-active");
+  $(".feat-btn3").addClass("feat-btn-active");
+  $("#feat3").show();
+});
+
+// FAQ behaviour
 $(".faq-drop1").click(function() {
   if ($(".img1").attr("src") === "images/icon-arrow.svg") {
     $(".img1").attr("src", "images/icon-close.svg");

@@ -131,7 +131,7 @@ p {
 
 /* Features Styles */
 .features {
-  padding: 0 11%;
+  padding: 0 10%;
 }
 
 .intro {
@@ -157,15 +157,19 @@ p {
   text-decoration: none;
 }
 
-.feat-btn1 {
+.feat-btn-active {
   font-weight: bold;
   border-bottom: 4px solid 	#f82020;
   padding-bottom: 8px;
   border-bottom-style: solid;
 }
 
-#feat2, #feat3 {
+.feat2, .feat3 {
   display: none;
+}
+
+.feat-img {
+  width: 40%;
 }
 
 .feature-illustration {
@@ -173,9 +177,27 @@ p {
 }
 
 /* Extension Styles */
+.card {
+  box-shadow: 1px 1px 15px -5px #9194a1;
+  border-radius: 10px;
+}
+
 .my-card {
   text-align: center;
   margin: 5% 20%;
+}
+
+.card-body {
+  padding: 1.25rem 0;
+}
+
+.my-card h6 {
+  font-weight: 600;
+  padding-top: 24px;
+}
+
+.my-card p {
+  font-size: .7rem;
 }
 
 .my-card2 {
@@ -188,6 +210,7 @@ p {
 
 .dots {
   width: 100%;
+  padding: 1rem 0;
 }
 
 /* FAQ Styles */
@@ -203,10 +226,6 @@ p {
 
 .faq-question {
   display: inline;
-}
-
-.faq-question-bold {
-  font-weight: 900;
 }
 
 .answer1, .answer2, .answer3, .answer4 {
